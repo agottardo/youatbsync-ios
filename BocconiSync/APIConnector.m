@@ -68,8 +68,8 @@
 
 -(void)retrieveTimeTableWithAuthID:(NSString*)authID AndUsername:(NSString*)username AndPassword:(NSString*)password WithBlock:(BocconiCalendarRequestCompleteBlock)block{
     
-    // Now back to the calendar. Same procedure, but with a different URL.
-    // We fetch events for two months from now.
+    // Now back to the calendar.
+    // We fetch events for 15 days from now.
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"yyyyMMdd"];
     NSDate *todayDate = [NSDate date];

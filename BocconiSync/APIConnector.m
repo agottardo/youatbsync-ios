@@ -10,6 +10,14 @@
 
 @implementation APIConnector
 
+/**
+ Generate the content for the Authorization HTTP header used by the Bocconi APIs.
+ @see https://en.wikipedia.org/wiki/Basic_access_authentication
+ @param username
+        Same as the student ID, in most of the cases
+ @param password
+        The user's password
+ */
 -(NSString*)generateBasicHTTPAuthHeaderWithUsername:(NSString*)username AndPassword:(NSString*)password{
     // For all API requests, we first need to convert our username and password to base64, which Bocconi uses to "securely" encode the auth data. :-)
     // We create a NSData object, with the required username:password format.
@@ -22,6 +30,13 @@
     return [NSString stringWithFormat:@"Basic %@", base64AuthString];
 }
 
+/**
+ Retrieves the UserID used by the Bocconi APIs to perform requests. It is NOT the same as the student ID.
+ @param username
+ Same as the student ID, in most of the cases
+ @param password
+ The user's password
+ */
 -(void)requestAuthIDWithUsername:(NSString*)username AndPassword:(NSString*)password WithBlock:(BocconiAuthRequestCompleteBlock)block {
     
     // Let's go with the first network request: we are asking Bocconi's servers for our user ID. That's a number which apparently identifies each student on the university database. And it's different from the usual student ID.
@@ -66,6 +81,15 @@
     
 }
 
+/**
+ Retrieves a calendar with all scheduled lectures in the next 15 days.
+ @param authID
+        The API authentication ID. Can be retrieved by calling -(void)requestAuthIDWithUsername:(NSString*)username AndPassword:(NSString*)password WithBlock:(BocconiAuthRequestCompleteBlock)block;
+ @param username
+        Same as the student ID, in most of the cases
+ @param password
+        The user's password
+ */
 -(void)retrieveTimeTableWithAuthID:(NSString*)authID AndUsername:(NSString*)username AndPassword:(NSString*)password WithBlock:(BocconiCalendarRequestCompleteBlock)block{
     
     // Now back to the calendar.

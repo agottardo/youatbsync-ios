@@ -182,6 +182,9 @@
             event.endDate = endDate;
             event.calendar = [self.calStore defaultCalendarForNewEvents];
             event.notes = @"Added by BocconiSync";
+            EKAlarm *eventAlarm = [[EKAlarm alloc] init];
+            [eventAlarm setRelativeOffset:-(15*60)]; // alarm 15 minutes before
+            [event addAlarm:eventAlarm];
             NSError *err = nil; // we need an error, apparently
             [self.calStore saveEvent:event span:EKSpanThisEvent commit:YES error:&err];
             
@@ -194,6 +197,10 @@
     
     [self.defaults setObject:self.createdEventsStorage forKey:@"createdEventsStorage"];
     [self.defaults synchronize];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Yeah!" message:@"Sync completed!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    
 }
 
 -(void)deleteAllBocconiEvents {

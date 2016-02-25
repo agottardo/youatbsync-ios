@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RoomsBrain.h"
 @import EventKit;
 
 @interface ViewController : UIViewController
@@ -16,6 +17,9 @@
 @property NSUserDefaults *defaults;
 @property EKEventStore *calStore;
 @property NSMutableArray *createdEventsStorage;
+@property RoomsBrain *roomsBrain;
+@property (weak, nonatomic) IBOutlet UILabel *lastSyncLabel;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
 
 
 @end

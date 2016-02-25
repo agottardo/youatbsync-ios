@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6510D76D1C7F3BB6002AA570 /* RoomsBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510D76C1C7F3BB6002AA570 /* RoomsBrain.m */; };
 		6591F4AA1C7E5F6C0025345C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6591F4A91C7E5F6C0025345C /* main.m */; };
 		6591F4AD1C7E5F6C0025345C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6591F4AC1C7E5F6C0025345C /* AppDelegate.m */; };
 		6591F4B01C7E5F6C0025345C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6591F4AF1C7E5F6C0025345C /* ViewController.m */; };
@@ -16,7 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6591F4A51C7E5F6C0025345C /* BocconiSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BocconiSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6510D76B1C7F3BB6002AA570 /* RoomsBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomsBrain.h; sourceTree = "<group>"; };
+		6510D76C1C7F3BB6002AA570 /* RoomsBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomsBrain.m; sourceTree = "<group>"; };
+		6591F4A51C7E5F6C0025345C /* you@B Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "you@B Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6591F4A91C7E5F6C0025345C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6591F4AB1C7E5F6C0025345C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6591F4AC1C7E5F6C0025345C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,7 +53,7 @@
 		6591F4A61C7E5F6C0025345C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6591F4A51C7E5F6C0025345C /* BocconiSync.app */,
+				6591F4A51C7E5F6C0025345C /* you@B Sync.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +70,8 @@
 				6591F4B61C7E5F6C0025345C /* LaunchScreen.storyboard */,
 				6591F4B91C7E5F6C0025345C /* Info.plist */,
 				6591F4A81C7E5F6C0025345C /* Supporting Files */,
+				6510D76B1C7F3BB6002AA570 /* RoomsBrain.h */,
+				6510D76C1C7F3BB6002AA570 /* RoomsBrain.m */,
 			);
 			path = BocconiSync;
 			sourceTree = "<group>";
@@ -82,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6591F4A41C7E5F6C0025345C /* BocconiSync */ = {
+		6591F4A41C7E5F6C0025345C /* you@B Sync */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6591F4BC1C7E5F6C0025345C /* Build configuration list for PBXNativeTarget "BocconiSync" */;
+			buildConfigurationList = 6591F4BC1C7E5F6C0025345C /* Build configuration list for PBXNativeTarget "you@B Sync" */;
 			buildPhases = (
 				6591F4A11C7E5F6C0025345C /* Sources */,
 				6591F4A21C7E5F6C0025345C /* Frameworks */,
@@ -94,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = BocconiSync;
+			name = "you@B Sync";
 			productName = BocconiSync;
-			productReference = 6591F4A51C7E5F6C0025345C /* BocconiSync.app */;
+			productReference = 6591F4A51C7E5F6C0025345C /* you@B Sync.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6591F4A01C7E5F6C0025345C /* Build configuration list for PBXProject "BocconiSync" */;
+			buildConfigurationList = 6591F4A01C7E5F6C0025345C /* Build configuration list for PBXProject "you@B Sync" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -127,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6591F4A41C7E5F6C0025345C /* BocconiSync */,
+				6591F4A41C7E5F6C0025345C /* you@B Sync */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +158,7 @@
 				6591F4B01C7E5F6C0025345C /* ViewController.m in Sources */,
 				6591F4AD1C7E5F6C0025345C /* AppDelegate.m in Sources */,
 				6591F4AA1C7E5F6C0025345C /* main.m in Sources */,
+				6510D76D1C7F3BB6002AA570 /* RoomsBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,8 +272,8 @@
 				INFOPLIST_FILE = BocconiSync/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.gottardo.BocconiSync;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.gottardo.bocconisync;
+				PRODUCT_NAME = "you@B Sync";
 			};
 			name = Debug;
 		};
@@ -279,15 +285,15 @@
 				INFOPLIST_FILE = BocconiSync/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.gottardo.BocconiSync;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.gottardo.bocconisync;
+				PRODUCT_NAME = "you@B Sync";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6591F4A01C7E5F6C0025345C /* Build configuration list for PBXProject "BocconiSync" */ = {
+		6591F4A01C7E5F6C0025345C /* Build configuration list for PBXProject "you@B Sync" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6591F4BA1C7E5F6C0025345C /* Debug */,
@@ -296,13 +302,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6591F4BC1C7E5F6C0025345C /* Build configuration list for PBXNativeTarget "BocconiSync" */ = {
+		6591F4BC1C7E5F6C0025345C /* Build configuration list for PBXNativeTarget "you@B Sync" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6591F4BD1C7E5F6C0025345C /* Debug */,
 				6591F4BE1C7E5F6C0025345C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

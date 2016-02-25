@@ -11,13 +11,14 @@
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForAnalyzing = "YES"
+            hideIssues = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6591F4A41C7E5F6C0025345C"
-               BuildableName = "BocconiSync.app"
-               BlueprintName = "BocconiSync"
-               ReferencedContainer = "container:BocconiSync.xcodeproj">
+               BuildableName = "you@B Sync.app"
+               BlueprintName = "you@B Sync"
+               ReferencedContainer = "container:you@B Sync.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +34,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6591F4A41C7E5F6C0025345C"
-            BuildableName = "BocconiSync.app"
-            BlueprintName = "BocconiSync"
-            ReferencedContainer = "container:BocconiSync.xcodeproj">
+            BuildableName = "you@B Sync.app"
+            BlueprintName = "you@B Sync"
+            ReferencedContainer = "container:you@B Sync.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6591F4A41C7E5F6C0025345C"
-            BuildableName = "BocconiSync.app"
-            BlueprintName = "BocconiSync"
-            ReferencedContainer = "container:BocconiSync.xcodeproj">
+            BuildableName = "you@B Sync.app"
+            BlueprintName = "you@B Sync"
+            ReferencedContainer = "container:you@B Sync.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6591F4A41C7E5F6C0025345C"
-            BuildableName = "BocconiSync.app"
-            BlueprintName = "BocconiSync"
-            ReferencedContainer = "container:BocconiSync.xcodeproj">
+            BuildableName = "you@B Sync.app"
+            BlueprintName = "you@B Sync"
+            ReferencedContainer = "container:you@B Sync.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

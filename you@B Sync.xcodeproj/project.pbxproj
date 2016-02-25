@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		6510D76D1C7F3BB6002AA570 /* RoomsBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510D76C1C7F3BB6002AA570 /* RoomsBrain.m */; };
+		65120CA11C7F551C007F02E5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65120C9F1C7F551C007F02E5 /* Fabric.framework */; };
+		65120CA21C7F551C007F02E5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65120CA01C7F551C007F02E5 /* Crashlytics.framework */; };
 		6591F4AA1C7E5F6C0025345C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6591F4A91C7E5F6C0025345C /* main.m */; };
 		6591F4AD1C7E5F6C0025345C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6591F4AC1C7E5F6C0025345C /* AppDelegate.m */; };
 		6591F4B01C7E5F6C0025345C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6591F4AF1C7E5F6C0025345C /* ViewController.m */; };
 		6591F4B31C7E5F6C0025345C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6591F4B11C7E5F6C0025345C /* Main.storyboard */; };
 		6591F4B51C7E5F6C0025345C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6591F4B41C7E5F6C0025345C /* Assets.xcassets */; };
 		6591F4B81C7E5F6C0025345C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6591F4B61C7E5F6C0025345C /* LaunchScreen.storyboard */; };
+		659BB5F61C7FB9B0003FB479 /* APIConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 659BB5F51C7FB9B0003FB479 /* APIConnector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6510D76B1C7F3BB6002AA570 /* RoomsBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomsBrain.h; sourceTree = "<group>"; };
 		6510D76C1C7F3BB6002AA570 /* RoomsBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomsBrain.m; sourceTree = "<group>"; };
+		65120C9F1C7F551C007F02E5 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		65120CA01C7F551C007F02E5 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		6591F4A51C7E5F6C0025345C /* you@B Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "you@B Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6591F4A91C7E5F6C0025345C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6591F4AB1C7E5F6C0025345C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +34,8 @@
 		6591F4B41C7E5F6C0025345C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6591F4B71C7E5F6C0025345C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6591F4B91C7E5F6C0025345C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659BB5F41C7FB9B0003FB479 /* APIConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConnector.h; sourceTree = "<group>"; };
+		659BB5F51C7FB9B0003FB479 /* APIConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConnector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65120CA21C7F551C007F02E5 /* Crashlytics.framework in Frameworks */,
+				65120CA11C7F551C007F02E5 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,8 @@
 			children = (
 				6591F4AB1C7E5F6C0025345C /* AppDelegate.h */,
 				6591F4AC1C7E5F6C0025345C /* AppDelegate.m */,
+				659BB5F41C7FB9B0003FB479 /* APIConnector.h */,
+				659BB5F51C7FB9B0003FB479 /* APIConnector.m */,
 				6591F4AE1C7E5F6C0025345C /* ViewController.h */,
 				6591F4AF1C7E5F6C0025345C /* ViewController.m */,
 				6591F4B11C7E5F6C0025345C /* Main.storyboard */,
@@ -79,6 +90,8 @@
 		6591F4A81C7E5F6C0025345C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				65120C9F1C7F551C007F02E5 /* Fabric.framework */,
+				65120CA01C7F551C007F02E5 /* Crashlytics.framework */,
 				6591F4A91C7E5F6C0025345C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -94,6 +107,7 @@
 				6591F4A11C7E5F6C0025345C /* Sources */,
 				6591F4A21C7E5F6C0025345C /* Frameworks */,
 				6591F4A31C7E5F6C0025345C /* Resources */,
+				65120C9E1C7F54F4007F02E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -116,6 +130,11 @@
 					6591F4A41C7E5F6C0025345C = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = V7Z242RQX3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -150,11 +169,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65120C9E1C7F54F4007F02E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run effd7eda13325d763b3d1fb893cfed326441b114 625951a1bd49a3b7318f1eb2e4c992a3843aef8f7f31980326da99ea584550d9";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6591F4A11C7E5F6C0025345C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659BB5F61C7FB9B0003FB479 /* APIConnector.m in Sources */,
 				6591F4B01C7E5F6C0025345C /* ViewController.m in Sources */,
 				6591F4AD1C7E5F6C0025345C /* AppDelegate.m in Sources */,
 				6591F4AA1C7E5F6C0025345C /* main.m in Sources */,
@@ -269,6 +305,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BocconiSync/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -282,6 +322,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BocconiSync/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

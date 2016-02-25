@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -52,7 +52,7 @@ Insert your username and password to continue.</string>
                                     <action selector="didPressSyncButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6CY-Ua-c7q"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmI-Xg-h9L">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmI-Xg-h9L">
                                 <rect key="frame" x="20" y="531" width="560" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="zBv-Qx-5Gw"/>
@@ -73,9 +73,24 @@ Insert your username and password to continue.</string>
                                     <constraint firstAttribute="height" constant="21" id="HbX-FG-Y4M"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIx-dC-Ros">
+                                <rect key="frame" x="225" y="493" width="150" height="30"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.25490196079999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="COZ-sS-FsU"/>
+                                    <constraint firstAttribute="width" constant="150" id="fDC-KL-mqh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <state key="normal" title="Delete All Events">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="forceDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57h-Xe-sJk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.85490196078431369" green="0.82352941176470584" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -98,7 +113,9 @@ Insert your username and password to continue.</string>
                             <constraint firstItem="Aaz-TP-abe" firstAttribute="top" secondItem="vyD-fm-dmC" secondAttribute="bottom" constant="8" symbolic="YES" id="bMO-la-PSt"/>
                             <constraint firstItem="Xk0-qA-VQi" firstAttribute="top" secondItem="cIn-u3-MiQ" secondAttribute="bottom" constant="8" symbolic="YES" id="c7c-bR-t19"/>
                             <constraint firstItem="VNY-5v-Zdn" firstAttribute="leading" secondItem="7Hm-gV-oJX" secondAttribute="leading" id="cG5-bz-enJ"/>
+                            <constraint firstItem="tmI-Xg-h9L" firstAttribute="top" secondItem="aIx-dC-Ros" secondAttribute="bottom" constant="8" id="dhH-jV-Nny"/>
                             <constraint firstItem="cIn-u3-MiQ" firstAttribute="trailing" secondItem="Aaz-TP-abe" secondAttribute="trailing" id="f8r-6Z-0s6"/>
+                            <constraint firstItem="aIx-dC-Ros" firstAttribute="leading" secondItem="vyD-fm-dmC" secondAttribute="leading" id="tGh-nE-k9f"/>
                         </constraints>
                     </view>
                     <connections>

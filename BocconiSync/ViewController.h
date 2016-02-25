@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@import EventKit;
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UIButton *syncButton;
+@property NSUserDefaults *defaults;
+@property EKEventStore *calStore;
+@property NSMutableArray *createdEventsStorage;
 
 
 @end

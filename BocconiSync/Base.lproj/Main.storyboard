@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,76 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNY-5v-Zdn">
+                                <rect key="frame" x="20" y="28" width="560" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="i38-2H-12O"/>
+                                </constraints>
+                                <string key="text">BocconiSync keeps your iOS calendar in sync with the you@B student agenda.
+Insert your username and password to continue.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username / Student ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Hm-gV-oJX">
+                                <rect key="frame" x="20" y="119" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIn-u3-MiQ">
+                                <rect key="frame" x="20" y="157" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xk0-qA-VQi">
+                                <rect key="frame" x="277" y="195" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="G8g-sq-nkR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Sync"/>
+                                <connections>
+                                    <action selector="didPressSyncButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6CY-Ua-c7q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app is unofficial, and was not developed by Università Bocconi." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmI-Xg-h9L">
+                                <rect key="frame" x="20" y="531" width="560" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="5Td-RF-OK7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xk0-qA-VQi" firstAttribute="top" secondItem="cIn-u3-MiQ" secondAttribute="bottom" constant="8" symbolic="YES" id="0f2-4a-0Lc"/>
+                            <constraint firstItem="VNY-5v-Zdn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="5yb-dD-bnb"/>
+                            <constraint firstItem="Xk0-qA-VQi" firstAttribute="centerX" secondItem="cIn-u3-MiQ" secondAttribute="centerX" id="6x7-iS-zW0"/>
+                            <constraint firstItem="7Hm-gV-oJX" firstAttribute="top" secondItem="VNY-5v-Zdn" secondAttribute="bottom" constant="8" symbolic="YES" id="7Fn-vv-nBN"/>
+                            <constraint firstItem="cIn-u3-MiQ" firstAttribute="top" secondItem="7Hm-gV-oJX" secondAttribute="bottom" constant="8" symbolic="YES" id="KNs-Yv-lYB"/>
+                            <constraint firstItem="7Hm-gV-oJX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LSE-fI-Brl"/>
+                            <constraint firstItem="tmI-Xg-h9L" firstAttribute="trailing" secondItem="cIn-u3-MiQ" secondAttribute="trailing" id="M8P-tZ-jNE"/>
+                            <constraint firstAttribute="bottom" secondItem="tmI-Xg-h9L" secondAttribute="bottom" constant="20" symbolic="YES" id="ejN-dB-TRR"/>
+                            <constraint firstItem="VNY-5v-Zdn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hPi-Z3-ibg"/>
+                            <constraint firstItem="7Hm-gV-oJX" firstAttribute="leading" secondItem="cIn-u3-MiQ" secondAttribute="leading" id="jEC-hz-EQu"/>
+                            <constraint firstItem="7Hm-gV-oJX" firstAttribute="trailing" secondItem="VNY-5v-Zdn" secondAttribute="trailing" id="msL-uh-pLa"/>
+                            <constraint firstItem="7Hm-gV-oJX" firstAttribute="leading" secondItem="VNY-5v-Zdn" secondAttribute="leading" id="qLX-Zh-OED"/>
+                            <constraint firstItem="7Hm-gV-oJX" firstAttribute="trailing" secondItem="cIn-u3-MiQ" secondAttribute="trailing" id="s2X-8K-TLl"/>
+                            <constraint firstItem="tmI-Xg-h9L" firstAttribute="leading" secondItem="cIn-u3-MiQ" secondAttribute="leading" id="vLo-5E-ZMb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="cIn-u3-MiQ" id="6ow-uD-Rs3"/>
+                        <outlet property="syncButton" destination="Xk0-qA-VQi" id="ptG-Fh-prX"/>
+                        <outlet property="usernameField" destination="7Hm-gV-oJX" id="7JM-dI-KIs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
 </document>

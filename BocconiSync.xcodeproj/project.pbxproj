@@ -110,6 +110,7 @@
 				TargetAttributes = {
 					6591F4A41C7E5F6C0025345C = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = V7Z242RQX3;
 					};
 				};
 			};
@@ -261,7 +262,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BocconiSync/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gottardo.BocconiSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +275,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BocconiSync/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gottardo.BocconiSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";

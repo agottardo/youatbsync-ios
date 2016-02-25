@@ -29,7 +29,7 @@
     // Geolocation module for rooms locations
     self.roomsBrain = [[RoomsBrain alloc] init];
     
-    self.apiConnector = [[APIConnector alloc] init];
+    self.sarfattiConnector = [[SarfattiConnector alloc] init];
     
     // Defining NSUserDefaults, the iOS easy to use data storage. We'll use that for passwords.
     
@@ -107,7 +107,7 @@
     
     // Now that our login data is clear, let's have fun.
     
-    [self.apiConnector requestAuthIDWithUsername:[self.defaults valueForKey:@"username"] AndPassword:[self.defaults valueForKey:@"password"] WithBlock:^(BOOL wasSuccessful, NSString *errorMessage, NSNumber *authID) {
+    [self.sarfattiConnector requestAuthIDWithUsername:[self.defaults valueForKey:@"username"] AndPassword:[self.defaults valueForKey:@"password"] WithBlock:^(BOOL wasSuccessful, NSString *errorMessage, NSNumber *authID) {
         if (!wasSuccessful) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMessage delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
@@ -115,7 +115,7 @@
             
             [_progressBar setProgress:0.5];
             
-            [self.apiConnector retrieveTimeTableWithAuthID:authID AndUsername:[self.defaults valueForKey:@"username"] AndPassword:[self.defaults valueForKey:@"password"] WithBlock:^(BOOL wasSuccessful, NSString *errorMessage, NSDictionary *calendarDictionary) {
+            [self.sarfattiConnector retrieveTimeTableWithAuthID:authID AndUsername:[self.defaults valueForKey:@"username"] AndPassword:[self.defaults valueForKey:@"password"] WithBlock:^(BOOL wasSuccessful, NSString *errorMessage, NSDictionary *calendarDictionary) {
                 
                 [_progressBar setProgress:0.7];
                 

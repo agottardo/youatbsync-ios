@@ -1,5 +1,5 @@
 //
-//  APIConnector.h
+//  SarfattiConnector.h
 //  you@B Sync
 //
 //  Created by Andrea Gottardo on 2/25/16.
@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface APIConnector : NSObject
+/**
+ SarfattiConnector is a bridge between Objective-C and the Bocconi APIs.
+ **/
+@interface SarfattiConnector : NSObject
 
 typedef void (^BocconiAuthRequestCompleteBlock) (BOOL wasSuccessful, NSString *errorMessage, NSNumber *authID);
 typedef void (^BocconiCalendarRequestCompleteBlock) (BOOL wasSuccessful, NSString *errorMessage, NSDictionary *calendarDictionary);

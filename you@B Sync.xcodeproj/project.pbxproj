@@ -16,7 +16,7 @@
 		6591F4B31C7E5F6C0025345C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6591F4B11C7E5F6C0025345C /* Main.storyboard */; };
 		6591F4B51C7E5F6C0025345C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6591F4B41C7E5F6C0025345C /* Assets.xcassets */; };
 		6591F4B81C7E5F6C0025345C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6591F4B61C7E5F6C0025345C /* LaunchScreen.storyboard */; };
-		659BB5F61C7FB9B0003FB479 /* APIConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 659BB5F51C7FB9B0003FB479 /* APIConnector.m */; };
+		659BB5F61C7FB9B0003FB479 /* SarfattiConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 659BB5F51C7FB9B0003FB479 /* SarfattiConnector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		6591F4B41C7E5F6C0025345C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6591F4B71C7E5F6C0025345C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6591F4B91C7E5F6C0025345C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		659BB5F41C7FB9B0003FB479 /* APIConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConnector.h; sourceTree = "<group>"; };
-		659BB5F51C7FB9B0003FB479 /* APIConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConnector.m; sourceTree = "<group>"; };
+		659BB5F41C7FB9B0003FB479 /* SarfattiConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SarfattiConnector.h; sourceTree = "<group>"; };
+		659BB5F51C7FB9B0003FB479 /* SarfattiConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SarfattiConnector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +72,8 @@
 			children = (
 				6591F4AB1C7E5F6C0025345C /* AppDelegate.h */,
 				6591F4AC1C7E5F6C0025345C /* AppDelegate.m */,
-				659BB5F41C7FB9B0003FB479 /* APIConnector.h */,
-				659BB5F51C7FB9B0003FB479 /* APIConnector.m */,
+				659BB5F41C7FB9B0003FB479 /* SarfattiConnector.h */,
+				659BB5F51C7FB9B0003FB479 /* SarfattiConnector.m */,
 				6591F4AE1C7E5F6C0025345C /* ViewController.h */,
 				6591F4AF1C7E5F6C0025345C /* ViewController.m */,
 				6591F4B11C7E5F6C0025345C /* Main.storyboard */,
@@ -190,7 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659BB5F61C7FB9B0003FB479 /* APIConnector.m in Sources */,
+				659BB5F61C7FB9B0003FB479 /* SarfattiConnector.m in Sources */,
 				6591F4B01C7E5F6C0025345C /* ViewController.m in Sources */,
 				6591F4AD1C7E5F6C0025345C /* AppDelegate.m in Sources */,
 				6591F4AA1C7E5F6C0025345C /* main.m in Sources */,

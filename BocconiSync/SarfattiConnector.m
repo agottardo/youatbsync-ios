@@ -1,14 +1,14 @@
 //
-//  APIConnector.m
+//  SarfattiConnector.m
 //  you@B Sync
 //
 //  Created by Andrea Gottardo on 2/25/16.
 //  Copyright © 2016 Andrea Gottardo. All rights reserved.
 //
 
-#import "APIConnector.h"
+#import "SarfattiConnector.h"
 
-@implementation APIConnector
+@implementation SarfattiConnector
 
 /**
  Generate the content for the Authorization HTTP header used by the Bocconi APIs.

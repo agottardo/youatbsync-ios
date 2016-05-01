@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161D4AB3BD2CE1EA66DCBC30 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D271B047794D60C41EA19DE3 /* libPods.a */; };
 		6510D76D1C7F3BB6002AA570 /* RoomsBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510D76C1C7F3BB6002AA570 /* RoomsBrain.m */; };
 		65120CA11C7F551C007F02E5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65120C9F1C7F551C007F02E5 /* Fabric.framework */; };
 		65120CA21C7F551C007F02E5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65120CA01C7F551C007F02E5 /* Crashlytics.framework */; };
@@ -17,6 +18,8 @@
 		6591F4B51C7E5F6C0025345C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6591F4B41C7E5F6C0025345C /* Assets.xcassets */; };
 		6591F4B81C7E5F6C0025345C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6591F4B61C7E5F6C0025345C /* LaunchScreen.storyboard */; };
 		659BB5F61C7FB9B0003FB479 /* SarfattiConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 659BB5F51C7FB9B0003FB479 /* SarfattiConnector.m */; };
+		65F93FA81C8C86AF00791E45 /* NSDate+RelativeTime.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 65F93FA51C8C86AF00791E45 /* NSDate+RelativeTime.bundle */; };
+		65F93FA91C8C86AF00791E45 /* NSDate+RelativeTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F93FA71C8C86AF00791E45 /* NSDate+RelativeTime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,12 @@
 		6591F4B91C7E5F6C0025345C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659BB5F41C7FB9B0003FB479 /* SarfattiConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SarfattiConnector.h; sourceTree = "<group>"; };
 		659BB5F51C7FB9B0003FB479 /* SarfattiConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SarfattiConnector.m; sourceTree = "<group>"; };
+		65F93FA51C8C86AF00791E45 /* NSDate+RelativeTime.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "NSDate+RelativeTime.bundle"; sourceTree = "<group>"; };
+		65F93FA61C8C86AF00791E45 /* NSDate+RelativeTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RelativeTime.h"; sourceTree = "<group>"; };
+		65F93FA71C8C86AF00791E45 /* NSDate+RelativeTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RelativeTime.m"; sourceTree = "<group>"; };
+		C942FCBDE60BFE1D2D1CB587 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D271B047794D60C41EA19DE3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FB1B52F30B3097E0D335AF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,7 @@
 			files = (
 				65120CA21C7F551C007F02E5 /* Crashlytics.framework in Frameworks */,
 				65120CA11C7F551C007F02E5 /* Fabric.framework in Frameworks */,
+				161D4AB3BD2CE1EA66DCBC30 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,8 @@
 			children = (
 				6591F4A71C7E5F6C0025345C /* BocconiSync */,
 				6591F4A61C7E5F6C0025345C /* Products */,
+				D936D91196D08A200C4EBC94 /* Pods */,
+				BC73AA3550437AAD93FA3062 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,11 +102,31 @@
 		6591F4A81C7E5F6C0025345C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				65F93FA51C8C86AF00791E45 /* NSDate+RelativeTime.bundle */,
+				65F93FA61C8C86AF00791E45 /* NSDate+RelativeTime.h */,
+				65F93FA71C8C86AF00791E45 /* NSDate+RelativeTime.m */,
 				65120C9F1C7F551C007F02E5 /* Fabric.framework */,
 				65120CA01C7F551C007F02E5 /* Crashlytics.framework */,
 				6591F4A91C7E5F6C0025345C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC73AA3550437AAD93FA3062 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D271B047794D60C41EA19DE3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D936D91196D08A200C4EBC94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2FB1B52F30B3097E0D335AF /* Pods.debug.xcconfig */,
+				C942FCBDE60BFE1D2D1CB587 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +136,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6591F4BC1C7E5F6C0025345C /* Build configuration list for PBXNativeTarget "you@B Sync" */;
 			buildPhases = (
+				E5D28064D333ED45CCD705AA /* Check Pods Manifest.lock */,
 				6591F4A11C7E5F6C0025345C /* Sources */,
 				6591F4A21C7E5F6C0025345C /* Frameworks */,
 				6591F4A31C7E5F6C0025345C /* Resources */,
 				65120C9E1C7F54F4007F02E5 /* ShellScript */,
+				00972D98D824F73BA7B3EF1F /* Embed Pods Frameworks */,
+				7FE169E5306243C996267D74 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,12 +199,28 @@
 				6591F4B81C7E5F6C0025345C /* LaunchScreen.storyboard in Resources */,
 				6591F4B51C7E5F6C0025345C /* Assets.xcassets in Resources */,
 				6591F4B31C7E5F6C0025345C /* Main.storyboard in Resources */,
+				65F93FA81C8C86AF00791E45 /* NSDate+RelativeTime.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00972D98D824F73BA7B3EF1F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		65120C9E1C7F54F4007F02E5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,6 +234,36 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run effd7eda13325d763b3d1fb893cfed326441b114 625951a1bd49a3b7318f1eb2e4c992a3843aef8f7f31980326da99ea584550d9";
 		};
+		7FE169E5306243C996267D74 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5D28064D333ED45CCD705AA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				659BB5F61C7FB9B0003FB479 /* SarfattiConnector.m in Sources */,
+				65F93FA91C8C86AF00791E45 /* NSDate+RelativeTime.m in Sources */,
 				6591F4B01C7E5F6C0025345C /* ViewController.m in Sources */,
 				6591F4AD1C7E5F6C0025345C /* AppDelegate.m in Sources */,
 				6591F4AA1C7E5F6C0025345C /* main.m in Sources */,
@@ -256,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -293,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -302,6 +384,7 @@
 		};
 		6591F4BD1C7E5F6C0025345C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2FB1B52F30B3097E0D335AF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -310,7 +393,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = BocconiSync/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gottardo.bocconisync;
 				PRODUCT_NAME = "you@B Sync";
@@ -319,6 +402,7 @@
 		};
 		6591F4BE1C7E5F6C0025345C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C942FCBDE60BFE1D2D1CB587 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -327,7 +411,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = BocconiSync/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gottardo.bocconisync;
 				PRODUCT_NAME = "you@B Sync";

@@ -13,13 +13,13 @@
  **/
 @interface SarfattiConnector : NSObject
 
-typedef void (^BocconiAuthRequestCompleteBlock) (BOOL wasSuccessful, NSString *errorMessage, NSNumber *authID);
-typedef void (^BocconiCalendarRequestCompleteBlock) (BOOL wasSuccessful, NSString *errorMessage, NSDictionary *calendarDictionary);
+typedef void (^SarfattiAuthRequestCompleteBlock) (BOOL wasSuccessful, NSString *errorMessage, NSNumber *authID);
+typedef void (^SarfattiCalendarRequestCompleteBlock) (BOOL wasSuccessful, NSString *errorMessage, NSDictionary *calendarDictionary);
 
 -(NSString*)generateBasicHTTPAuthHeaderWithUsername:(NSString*)username AndPassword:(NSString*)password;
 
--(void)requestAuthIDWithUsername:(NSString*)username AndPassword:(NSString*)password WithBlock:(BocconiAuthRequestCompleteBlock)block;
+-(void)requestAuthIDWithUsername:(NSString*)username AndPassword:(NSString*)password WithBlock:(SarfattiAuthRequestCompleteBlock)block;
 
--(void)retrieveTimeTableWithAuthID:(NSString*)authID AndUsername:(NSString*)username AndPassword:(NSString*)password WithBlock:(BocconiCalendarRequestCompleteBlock)block;
+-(void)retrieveTimeTableWithAuthID:(NSString*)authID AndUsername:(NSString*)username AndPassword:(NSString*)password WithBlock:(SarfattiCalendarRequestCompleteBlock)block;
 
 @end
